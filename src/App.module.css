@@ -4,12 +4,13 @@
   gap: 1rem;
 }
 
-.App nav {
+.App header {
   grid-column: 1/-1;
 }
 
 .App > * {
   border: 1px solid black;
+  padding: 1rem;
 }
 
 li {

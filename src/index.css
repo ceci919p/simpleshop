@@ -101,9 +101,9 @@ button,
 }
 
 button {
-  background-color: black;
   margin-top: 1rem;
   margin-bottom: 0;
+  color: black;
 }
 
 .details {
@@ -118,4 +118,26 @@ button {
   margin: auto;
   margin-inline: 1rem;
   margin-top: 0;
+}
+
+.removing {
+  transition: all 1.5s;
+  transform: translateX(500px);
+}
+
+label,
+input {
+  width: 100%;
+}
+
+form {
+  margin-block: 2rem;
+}
+
+.totalprice {
+  margin: auto;
+  font-weight: 700;
+  text-align: end;
+  font-size: 1.3rem;
+  margin-top: 1rem;
 }

@@ -1,8 +1,6 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Product(props) {
-  const [showMore, setShowMore] = useState(false);
-
   function buy() {
     if (props.basket.find((item) => item.id === props.product.id)) {
       console.log("in basket already");
@@ -37,10 +35,7 @@ export default function Product(props) {
 
       <p>{props.product.price}</p>
       <button onClick={buy}>Buy</button>
-      <button onClick={() => setShowMore((old) => !old)}>Read more</button>
-      <div style={{ display: showMore ? "block" : "none" }}>
-        <p>here's data from the product</p>
-      </div>
+      <Link to={`/products/${props.product.id}`}>Read More</Link>
     </article>
   );
 }

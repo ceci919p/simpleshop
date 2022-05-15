@@ -15,7 +15,7 @@ export default function basket(props) {
         {props.basket.map((item) => {
           return (
             <li>
-              <button onClick={() => remove(item.id)}>
+              <button className="trash" onClick={() => remove(item.id)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

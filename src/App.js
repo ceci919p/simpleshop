@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Nav />
-      <ProductList />
+      <ProductList products={products} />
       <BasketContainer />
     </div>
   );

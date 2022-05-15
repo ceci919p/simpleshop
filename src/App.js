@@ -22,7 +22,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Nav />
-      <ProductList products={products} setBasket={setBasket} />
+      <ProductList products={products} basket={basket} setBasket={setBasket} />
       <BasketContainer setBasket={setBasket} basket={basket} />
     </div>
   );
